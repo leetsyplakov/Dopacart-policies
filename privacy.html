@@ -11,7 +11,7 @@
     <header>
         <a href="./">← Dopacart Legal</a>
         <h1>Privacy Policy</h1>
-        <p class="lede">Last updated 2026-06-16 · Effective 2026-06-16</p>
+        <p class="lede">Last updated 2026-06-18 · Effective 2026-06-18</p>
     </header>
 
     <div class="card">
@@ -20,9 +20,14 @@
         curated catalog and place pretend orders. No real products are sold or shipped, and no real
         payments are processed.</p>
 
-        <p><strong>In short: Dopacart contains no analytics, advertising, or tracking SDKs. The only
-        information we collect is what's needed to give you an account and remember the pretend orders you
-        place — and only if you choose to sign in.</strong></p>
+        <p><strong>In short: Dopacart uses no third-party analytics, advertising, or tracking SDKs and
+        never tracks you across other apps or websites. We collect only what's needed to run the app —
+        basic first-party usage data, and (if you sign in) your account and the pretend orders you
+        place.</strong></p>
+
+        <h2>You can use Dopacart with or without an account</h2>
+        <p>You can browse and place pretend orders as a <strong>guest</strong>, or sign in to save your
+        activity across devices. The information we handle depends on which you choose, as described below.</p>
 
         <h2>What we collect</h2>
         <ul>
@@ -32,18 +37,43 @@
                 may choose <em>Hide My Email</em>, in which case we receive a private relay address rather
                 than your real one. We use this solely to create and recognize your account.</li>
             <li><strong>Your simulated activity.</strong> The pretend orders and items you place are
-                stored on our server, associated with your account, so your activity is preserved across
-                sessions and devices.</li>
+                stored on our server so your activity is preserved across sessions and devices (when
+                signed in) or for the app to function (as a guest).</li>
+            <li><strong>Basic usage data (first-party).</strong> To operate and improve the app, our own
+                server records simple events: app opens and approximate time spent, products you view,
+                searches you run, items you add to your cart, and the pretend orders you place and what's
+                in them. We use this only to run app features — your order history and "money not spent"
+                stats, and merchandising such as "most viewed", "most purchased", and "most added to cart".
+                When you're signed in this is associated with your account; otherwise it's associated with
+                a random per-install identifier (see below).</li>
+            <li><strong>Per-install identifier.</strong> On first launch the app generates a random
+                "client id" that is not derived from your device hardware and is not your name or email.
+                It lets guest activity and pretend orders work without an account. Deleting and
+                reinstalling the app generates a new one.</li>
+            <li><strong>Push token (only if you enable notifications).</strong> If you allow
+                notifications, we store the push token Apple issues for your device so we can send order
+                updates and occasional announcements. You can turn notifications off at any time in iOS
+                Settings.</li>
+            <li><strong>Requests &amp; feedback.</strong> If you submit an "add this item" request or send
+                feedback from the app, we store the text you provide (with your account or client id) so
+                we can read and act on it.</li>
         </ul>
+
+        <h2>Shipping &amp; payment details at checkout</h2>
+        <p>Because the checkout is meant to feel real, it asks for a name, shipping address, and card
+        details. <strong>This information is fake-order data: it is used only to render your pretend order
+        on your device and is never sent to our server.</strong> If you choose to save a card, only its
+        brand, last four digits, and expiry are kept <strong>locally on your device</strong> — never the
+        full card number, and never transmitted. There are no real charges in Dopacart.</p>
 
         <h2>What we do not collect</h2>
         <ul>
             <li>Your Google or Apple password — sign-in is handled by the provider; we never see it.</li>
             <li>Your location, contacts, photos, microphone, or camera.</li>
-            <li>Advertising identifiers, device fingerprints, or any tracking identifiers.</li>
-            <li>Usage, browsing, or interaction analytics. There is no analytics SDK, crash-reporting SDK,
-                advertising SDK, or marketing SDK of any kind.</li>
-            <li>Real payment or financial information — there are no real purchases in Dopacart.</li>
+            <li>Advertising identifiers, device fingerprints, or any cross-app/cross-site tracking identifiers.</li>
+            <li>No third-party analytics, crash-reporting, advertising, or marketing SDKs of any kind.</li>
+            <li>Real payment or financial information — there are no real purchases, and card details you
+                type at checkout are make-believe and stay on your device.</li>
         </ul>
 
         <h2>Leaderboard</h2>
@@ -53,12 +83,18 @@
         shows your <strong>first name and last initial</strong> (for example, "Alex T.") — never your email —
         alongside those numbers, and you can turn it off again at any time.</p>
 
+        <h2>Favorites sharing</h2>
+        <p>You can optionally share your favorites/wishlist so other shoppers can see and "gift" them.
+        This is <strong>off by default</strong>; when you turn it on, your shared favorites and your first
+        name and last initial become visible to other users, and you can turn it off again at any time.</p>
+
         <h2>Reviews</h2>
-        <p>If you sign in, you can post product reviews. A review you submit — its star rating and its
-        text — is shown publicly to other users alongside your <strong>first name and last initial</strong>
-        (for example, "Alex T."), never your email. Please don't include personal or sensitive information
-        in a review. We may edit or remove reviews and may suspend an account that abuses the feature;
-        you can also ask us to remove a review you posted by emailing us.</p>
+        <p>If you sign in, you can post product reviews. A review is shown publicly alongside your
+        <strong>first name and last initial</strong> (for example, "Alex T."), never your email. Reviews
+        are <strong>moderated</strong>: a review you submit is visible only to you until we approve it.
+        Please don't include personal or sensitive information in a review. We may edit or remove reviews
+        and may suspend an account that abuses the feature; you can also ask us to remove a review you
+        posted by emailing us.</p>
 
         <h2>App integrity (App Attest)</h2>
         <p>Dopacart uses Apple's <strong>App Attest</strong> to confirm that requests come from a genuine,
@@ -66,24 +102,25 @@
         device-level integrity signal only; it does not identify you and is not used for tracking.</p>
 
         <h2>Where your data is stored</h2>
-        <p>Account records and your simulated orders are stored on our own server at
-        <code>api.pythonenthusiast.com</code>. Your cart and app preferences are also stored locally on
-        your device and are removed when you delete the app.</p>
+        <p>Account records, pretend orders, reviews, and usage events are stored on our own server at
+        <code>api.taskgizmo.com</code>. Your cart, saved card details, shipping address, and app
+        preferences are stored locally on your device and are removed when you delete the app.</p>
 
         <h2>Third parties</h2>
         <p>When you choose to sign in, Google or Apple acts as an identity provider; their handling of the
-        sign-in is governed by their own privacy policies. Dopacart integrates no third-party analytics,
-        advertising, or tracking SDKs, and we do not sell, rent, or share your information with
-        advertisers.</p>
+        sign-in is governed by their own privacy policies. If you enable notifications, delivery is handled
+        by Apple's Push Notification service. Dopacart integrates no third-party analytics, advertising, or
+        tracking SDKs, and we do not sell, rent, or share your information with advertisers.</p>
 
         <h2>Children</h2>
         <p>Dopacart is a general-audience app. It is not directed at children, and we do not knowingly
         collect data from children.</p>
 
         <h2>Your choices &amp; account deletion</h2>
-        <p>You can sign out at any time. You can <strong>delete your account and all associated data from
-        within the app</strong> (Settings → Delete Account), or by emailing us at the address below.
-        Deletion removes your account record and the simulated orders stored under it.</p>
+        <p>You can use the app as a guest, sign out at any time, and turn notifications, leaderboard
+        visibility, and favorites sharing on or off. If you have an account, you can <strong>delete it and
+        all associated data from within the app</strong> (Profile → Delete account), or by emailing us at
+        the address below. Deleting the app removes the data stored locally on your device.</p>
 
         <h2>Changes to this policy</h2>
         <p>We may update this policy. The "Last updated" date above reflects the most recent change.</p>
