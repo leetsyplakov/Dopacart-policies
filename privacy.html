@@ -11,20 +11,22 @@
     <header>
         <a href="./">← Dopacart Legal</a>
         <h1>Privacy Policy</h1>
-        <p class="lede">Last updated 2026-07-13 · Effective 2026-07-13</p>
+        <p class="lede">Last updated 2026-07-23 · Effective 2026-07-23</p>
     </header>
 
     <div class="card">
-        <p>This Privacy Policy describes how the Dopacart iOS app ("Dopacart", "we") handles information.
-        Dopacart is a <strong>simulated, for-entertainment shopping experience</strong>: you browse a
-        curated catalog and place pretend orders. No real products are sold or shipped, and no real
-        payments are processed.</p>
+        <p>This Privacy Policy describes how the Dopacart app for <strong>iOS and Android</strong>
+        ("Dopacart", "we") handles information. Dopacart is a
+        <strong>simulated, for-entertainment shopping experience</strong>: you browse a curated catalog
+        and place pretend orders. No real products are sold or shipped, and no real payments are
+        processed.</p>
 
         <p><strong>In short: Dopacart uses no third-party analytics or tracking SDKs and does not track you
-        across other apps or websites. It does show ads through Google AdMob (see "Advertising" below).
-        Otherwise we collect only what's needed to run and improve the app — first-party usage and
-        interaction data, and (if you sign in) your account, the pretend orders you place, and your saved
-        checkout details so they sync across your devices.</strong></p>
+        across other apps or websites. Otherwise we collect only what's needed to run and improve the
+        app — first-party usage and interaction data, and (if you sign in) your account, the pretend
+        orders you place, and your saved checkout details so they sync across your devices. Depending on
+        your platform and app version, Dopacart may show ads through Google AdMob (see "Advertising"); the
+        current Android version shows no ads.</strong></p>
 
         <h2>You can use Dopacart with or without an account</h2>
         <p>You can browse and place pretend orders as a <strong>guest</strong>, or sign in to save your
@@ -33,10 +35,11 @@
         <h2>What we collect</h2>
         <ul>
             <li><strong>Account information (only if you sign in).</strong> Dopacart lets you sign in with
-                <em>Sign in with Google</em> or <em>Sign in with Apple</em>. When you do, we receive from
-                that provider a stable user identifier, your email address, and your name. With Apple you
-                may choose <em>Hide My Email</em>, in which case we receive a private relay address rather
-                than your real one. We use this solely to create and recognize your account.</li>
+                <em>Sign in with Google</em> (on iOS and Android) or <em>Sign in with Apple</em> (on iOS).
+                When you do, we receive from that provider a stable user identifier, your email address,
+                your name, and — from Google — your profile photo. With Apple you may choose
+                <em>Hide My Email</em>, in which case we receive a private relay address rather than your
+                real one. We use this solely to create and recognize your account.</li>
             <li><strong>Member profile (optional).</strong> If you sign in, you can pick a public
                 <strong>@username</strong> and generate a <strong>send code</strong>; we store these with your
                 account so other members can send you a (pretend) order. You can change your username at any
@@ -59,26 +62,29 @@
                 "client id" that is not derived from your device hardware and is not your name or email.
                 It lets guest activity and pretend orders work without an account. Deleting and
                 reinstalling the app generates a new one.</li>
-            <li><strong>Push token (only if you enable notifications).</strong> If you allow
-                notifications, we store the push token Apple issues for your device so we can send order
-                updates and occasional announcements. You can turn notifications off at any time in iOS
-                Settings.</li>
+            <li><strong>Push token (only if notifications are available and you enable them).</strong> If
+                your platform supports push notifications and you allow them, we store the push token your
+                operating system issues (Apple's APNs on iOS, Google's FCM on Android) so we can send order
+                updates and occasional announcements. You can turn notifications off at any time in your
+                device settings.</li>
             <li><strong>Requests &amp; feedback.</strong> If you submit an "add this item" request or send
                 feedback from the app, we store the text you provide (with your account or client id) so
                 we can read and act on it.</li>
         </ul>
 
         <h2>Shipping &amp; payment details at checkout</h2>
-        <p>Because the checkout is meant to feel real, it asks for a name, shipping address, and card
-        details. There are no real charges in Dopacart, and the <strong>full card number and security code
-        (CVV) you type are never stored and never sent to our server</strong> — they exist only in the
-        checkout form on your device.</p>
-        <p>To make checkout convenient across your devices, if you <strong>save a card</strong> we keep only
-        its <strong>brand, last four digits, expiry, and the cardholder name</strong> — never the full card
-        number or CVV. When you are <strong>signed in</strong>, your saved shipping address and this card
-        metadata are stored with your account on our server so a new device restores them on login; as a
-        guest they stay on your device only. You can remove a saved card or address in the app at any time,
-        and deleting your account removes them from our server.</p>
+        <p>Because the checkout is meant to feel real, it asks for a <strong>recipient name and shipping
+        address</strong>, and on some versions also for card details. There are no real charges in
+        Dopacart. Where card fields are shown, the <strong>full card number and security code (CVV) you
+        type are never stored and never sent to our server</strong> — they exist only in the checkout form
+        on your device. The current Android version's checkout collects only a recipient name and shipping
+        address and does not ask for card details.</p>
+        <p>To make checkout convenient across your devices, if you <strong>save a card</strong> (where that
+        option exists) we keep only its <strong>brand, last four digits, expiry, and the cardholder
+        name</strong> — never the full card number or CVV. When you are <strong>signed in</strong>, your
+        saved shipping address and any card metadata are stored with your account on our server so a new
+        device restores them on login; as a guest they stay on your device only. You can remove a saved
+        card or address in the app at any time, and deleting your account removes them from our server.</p>
 
         <h2>Sending orders to members</h2>
         <p>Signed-in members can send a (pretend) order to another member at checkout, identified by that
@@ -92,41 +98,46 @@
         <ul>
             <li>Your Google or Apple password — sign-in is handled by the provider; we never see it.</li>
             <li>Your location, contacts, photos, microphone, or camera.</li>
-            <li>Any cross-app or cross-site tracking. Dopacart does not request App Tracking Transparency
-                permission, so ads are non-personalized by default and your advertising identifier (IDFA)
-                is not used to track you across other apps or websites.</li>
-            <li>No third-party analytics, crash-reporting, or marketing SDKs. The only third-party SDK is
-                Google AdMob, used to display ads (see "Advertising").</li>
-            <li>Real payment or financial information — there are no real purchases, and the full card
-                number and security code you type at checkout are never stored or transmitted.</li>
+            <li>Any cross-app or cross-site tracking. On iOS, Dopacart does not request App Tracking
+                Transparency permission, so ads (where shown) are non-personalized by default and your
+                advertising identifier (IDFA) is not used to track you across other apps or websites. On
+                Android, the current version contains no advertising SDK and collects no advertising ID.</li>
+            <li>No third-party analytics, crash-reporting, or marketing SDKs. The only third-party SDK
+                used for advertising is Google AdMob, and only in versions that show ads (see
+                "Advertising").</li>
+            <li>Real payment or financial information — there are no real purchases, and where card fields
+                are shown the full card number and security code you type are never stored or transmitted.</li>
         </ul>
 
         <h2>Advertising</h2>
-        <p>Dopacart shows ads through <strong>Google AdMob</strong> (the Google Mobile Ads SDK). To deliver
-        ads, prevent fraud, and cap how often an ad is shown, Google may collect device information and
-        in-app activity and may use a device identifier. Dopacart does <strong>not</strong> request App
-        Tracking Transparency permission, so by default ads are non-personalized and your advertising
-        identifier (IDFA) is not used to track you across other apps or websites. Google's handling of
-        advertising data is governed by
+        <p>Depending on your platform and app version, Dopacart may show ads through <strong>Google
+        AdMob</strong> (the Google Mobile Ads SDK). <strong>The current Android version shows no ads.</strong>
+        Where ads are shown, Google may — to deliver ads, prevent fraud, and cap how often an ad is
+        shown — collect device information and in-app activity and may use a device advertising identifier.
+        On iOS, Dopacart does <strong>not</strong> request App Tracking Transparency permission, so by
+        default ads are non-personalized and your advertising identifier (IDFA) is not used to track you
+        across other apps or websites; you can further limit ad personalization in iOS Settings → Privacy
+        &amp; Security → Apple Advertising. On Android, you can opt out of ad personalization or reset your
+        advertising ID in Settings → Google → Ads. Google's handling of advertising data is governed by
         <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>
-        and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-        You can limit ad personalization in iOS Settings → Privacy &amp; Security → Apple Advertising.</p>
-        <p>Ads appear in a few forms: small banners, occasional full-screen interstitials, and ads within
-        the shopping feed. Some optional extras (such as unlocking a Bonus category) can be unlocked by
-        choosing to watch a <strong>rewarded ad</strong> — watching is always your choice, and you can use
-        the rest of the app without it.</p>
+        and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+        <p>Where present, ads appear in a few forms: small banners, occasional full-screen interstitials,
+        and ads within the shopping feed. Some optional extras (such as unlocking a Bonus category) can be
+        unlocked by choosing to watch a <strong>rewarded ad</strong> — watching is always your choice, and
+        you can use the rest of the app without it.</p>
 
         <h2>Leaderboard</h2>
         <p>If you sign in, Dopacart includes a leaderboard that ranks shoppers by the (pretend) money
         they "didn't spend" and by their daily streak. You are <strong>not shown on it by default</strong> —
         you appear only if you turn on "Show me on the leaderboard" in your profile. When you do, your entry
         shows your <strong>first name and last initial</strong> (for example, "Alex T.") — never your email —
-        alongside those numbers, and you can turn it off again at any time.</p>
+        alongside those numbers, and you can turn it off again at any time. The leaderboard is shared across
+        the iOS and Android apps.</p>
 
         <h2>Favorites sharing</h2>
         <p>You can optionally share your favorites/wishlist so other shoppers can see and "gift" them.
-        This is <strong>off by default</strong>; when you turn it on, your shared favorites and your first
-        name and last initial become visible to other users, and you can turn it off again at any time.</p>
+        When you turn it on, your shared favorites and your first name and last initial become visible to
+        other users, and you can turn it off again at any time.</p>
 
         <h2>Reviews</h2>
         <p>If you sign in, you can post product reviews. A review is shown publicly alongside your
@@ -136,34 +147,37 @@
         and may suspend an account that abuses the feature; you can also ask us to remove a review you
         posted by emailing us.</p>
 
-        <h2>App integrity (App Attest)</h2>
-        <p>Dopacart uses Apple's <strong>App Attest</strong> to confirm that requests come from a genuine,
-        unmodified copy of the app, which protects the service from abuse. App Attest produces a
-        device-level integrity signal only; it does not identify you and is not used for tracking.</p>
+        <h2>App integrity</h2>
+        <p>On iOS, Dopacart uses Apple's <strong>App Attest</strong> to confirm that requests come from a
+        genuine, unmodified copy of the app, which protects the service from abuse. An equivalent
+        device-integrity check may be used on other platforms. Any such check produces a device-level
+        integrity signal only; it does not identify you and is not used for tracking.</p>
 
         <h2>Where your data is stored</h2>
         <p>Account records, pretend orders, reviews, usage events, and — when you are signed in — your saved
-        shipping address and card metadata (brand, last four, expiry, cardholder name) are stored on our own
-        server at <code>api.taskgizmo.com</code> so they sync across your devices. Your cart and app
-        preferences (and, as a guest, your saved address and card metadata) are stored locally on your
+        shipping address and any card metadata (brand, last four, expiry, cardholder name) are stored on our
+        own server at <code>api.taskgizmo.com</code> so they sync across your devices. Your cart and app
+        preferences (and, as a guest, your saved address and any card metadata) are stored locally on your
         device and are removed when you delete the app.</p>
 
         <h2>Third parties</h2>
         <p>When you choose to sign in, Google or Apple acts as an identity provider; their handling of the
         sign-in is governed by their own privacy policies. If you enable notifications, delivery is handled
-        by Apple's Push Notification service. Dopacart shows ads through Google AdMob (see "Advertising").
-        Dopacart integrates no third-party analytics or tracking SDKs, and we do not sell or rent your
-        personal information.</p>
+        by Apple's Push Notification service (iOS) or Google's Firebase Cloud Messaging (Android). In
+        versions that show ads, Dopacart uses Google AdMob (see "Advertising"). Dopacart integrates no
+        third-party analytics or tracking SDKs, and we do not sell or rent your personal information.</p>
 
         <h2>Children</h2>
         <p>Dopacart is a general-audience app. It is not directed at children, and we do not knowingly
         collect data from children.</p>
 
-        <h2>Your choices &amp; account deletion</h2>
+        <h2 id="delete-account">Your choices &amp; account deletion</h2>
         <p>You can use the app as a guest, sign out at any time, and turn notifications, leaderboard
         visibility, and favorites sharing on or off. If you have an account, you can <strong>delete it and
         all associated data from within the app</strong> (Profile → Delete account), or by emailing us at
-        the address below. Deleting the app removes the data stored locally on your device.</p>
+        the address below and we will delete your account and its data. Deleting the app removes the data
+        stored locally on your device. See our <a href="delete-account.html">account &amp; data deletion</a>
+        page for full details.</p>
 
         <h2>Changes to this policy</h2>
         <p>We may update this policy. The "Last updated" date above reflects the most recent change.</p>
